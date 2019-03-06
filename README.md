@@ -20,17 +20,16 @@ From within the virtual environment, install pytest (specifically version 3.10.1
 pip install pytest==3.10.1
 ```
 
-> NOTE: `conda search pytest` provides all the available versions of pytest
-
 
 ## Running Tests
 
 Use pytest to run tests:
 
 ```sh
+# all tests:
+pytest
+
+# or specific tests:
 pytest my_test.py
+pytest test/
 ```
-
-... currently running into errors:
-
-        AttributeError: 'Function' object has no attribute 'get_marker'
