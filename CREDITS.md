@@ -16,3 +16,36 @@ By adding a `conftest.py` to the root directory, it allows scripts within the "a
 
   + https://stackoverflow.com/questions/34466027/in-pytest-what-is-the-use-of-conftest-py-files
   + https://pytest.readthedocs.io/en/latest/plugins.html
+
+## Travis CI
+
+  + https://travis-ci.com/
+  + https://travis-ci.org/getting_started
+  + https://github.com/marketplace/travis-ci
+  + https://docs.travis-ci.com/user/tutorial/
+
+
+If repos don't show up in the Travis interface, visit https://github.com/marketplace/travis-ci and re-configure the service to access "All Repositories" or check the specific repo(s) of interest.
+
+Example .travis.yml for Python:
+
+```yml
+language: python
+python:
+  - "3.7"
+install:
+   - pip install pipenv
+   - pipenv install --dev
+script:
+  - pytest
+env:
+  SECRET_KEY: abc123
+```
+
+Configuring CI server...
+
+  1. Visit https://travis-ci.com/
+  2. Login with GitHub account.
+  3. Visit https://travis-ci.com/account/repositories and the "settings" of the repo you'd like to configure. You should see "no builds for this repository"
+  4. Add a .travis.yml file and push the changes to the remote repository's master branch.
+  5.
