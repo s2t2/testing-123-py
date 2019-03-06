@@ -48,4 +48,12 @@ Configuring CI server...
   2. Login with GitHub account.
   3. Visit https://travis-ci.com/account/repositories and the "settings" of the repo you'd like to configure. You should see "no builds for this repository"
   4. Add a .travis.yml file and push the changes to the remote repository's master branch.
-  5.
+
+
+Hmmm Python 3.7 not available on Travis.
+
+  + https://github.com/travis-ci/travis-ci/issues/9815
+  + https://github.com/travis-ci/travis-ci/issues/10312
+  + https://docs.travis-ci.com/user/languages/python/
+
+Need to either use "3.7-dev" (older / out of date?), or change/specify the type of server / distribution (`dist: xenial`).
