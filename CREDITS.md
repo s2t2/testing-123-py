@@ -23,6 +23,7 @@ By adding a `conftest.py` to the root directory, it allows scripts within the "a
   + https://travis-ci.org/getting_started
   + https://github.com/marketplace/travis-ci
   + https://docs.travis-ci.com/user/tutorial/
+  + https://docs.travis-ci.com/user/status-images/
 
 
 If repos don't show up in the Travis interface, visit https://github.com/marketplace/travis-ci and re-configure the service to access "All Repositories" or check the specific repo(s) of interest.
@@ -57,3 +58,5 @@ Hmmm Python 3.7 not available on Travis.
   + https://docs.travis-ci.com/user/languages/python/
 
 Need to either use "3.7-dev" (older / out of date?), or change/specify the type of server / distribution (`dist: xenial`).
+
+Adding badge... "The URLs for status images are shown on your Travis CI Repository page ... click the status image in the top right to open a dialog box containing common templates for the status image URL in markdown, html, etc."
