@@ -4,8 +4,6 @@
 
 An example Python application repository, configured with automated tests and continuous integration.
 
-Current status of the "build":
-
 [![Build Status](https://travis-ci.com/s2t2/testing-123.svg?branch=master)](https://travis-ci.com/s2t2/testing-123)
 
 ## Installation
